@@ -34,7 +34,6 @@ public class Hash_Tables_Ransom_Note {
 				magazineMap.put(s, occurrences + 1);
 			}
 		}
-
 		for (String s : note.split("[^a-zA-Z]+")) {
 			occurrences = noteMap.get(s);
 
@@ -44,9 +43,7 @@ public class Hash_Tables_Ransom_Note {
 				noteMap.put(s, occurrences + 1);
 			}
 		}
-
 	}
-
 	public void solve() {
 		boolean canReplicate = true;
 		for (String s : noteMap.keySet()) {
@@ -55,9 +52,7 @@ public class Hash_Tables_Ransom_Note {
 				break;
 			}
 		}
-
 		System.out.println((canReplicate) ? "Yes" : "No");
-
 	}
 
 	public static void main(String[] args) {
