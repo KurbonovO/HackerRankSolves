@@ -6,7 +6,8 @@ public class Given_an_array_of_an_n_integers_perform_d_left_rotation {
 
 	public static int[] rotateArray(int[] arr, int d) {
 
-		// Because the constraints state d < n, we need not concern ourselves with
+		// Because the constraints state d < n, we need not concern ourselves
+		// with
 		// shifting > n units.
 		int n = arr.length;
 

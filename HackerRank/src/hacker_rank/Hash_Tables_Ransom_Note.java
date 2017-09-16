@@ -21,7 +21,8 @@ public class Hash_Tables_Ransom_Note {
 		this.noteMap = new HashMap<String, Integer>();
 		this.magazineMap = new HashMap<String, Integer>();
 
-		// Must use an object instead of a primitive because it may be assigned a null
+		// Must use an object instead of a primitive because it may be assigned
+		// a null
 		// reference.
 		Integer occurrences;
 
@@ -47,7 +48,8 @@ public class Hash_Tables_Ransom_Note {
 	public void solve() {
 		boolean canReplicate = true;
 		for (String s : noteMap.keySet()) {
-			if (!magazineMap.containsKey(s) || (magazineMap.get(s) < noteMap.get(s))) {
+			if (!magazineMap.containsKey(s)
+					|| (magazineMap.get(s) < noteMap.get(s))) {
 				canReplicate = false;
 				break;
 			}
@@ -63,7 +65,8 @@ public class Hash_Tables_Ransom_Note {
 		// Eat whitespace to beginning of next line
 		scanner.nextLine();
 
-		Hash_Tables_Ransom_Note s = new Hash_Tables_Ransom_Note(scanner.nextLine(), scanner.nextLine());
+		Hash_Tables_Ransom_Note s = new Hash_Tables_Ransom_Note(
+				scanner.nextLine(), scanner.nextLine());
 		scanner.close();
 
 		s.solve();
