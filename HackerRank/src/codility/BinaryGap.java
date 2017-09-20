@@ -12,12 +12,11 @@ N is an integer within the range 1..2,147,483,647
  */
 
 public class BinaryGap {
-
-	 public int solution2(int nro) {
+	 public int solution2(int number) {
 	        int max = -1;
 	        int count = 0;
-	        while (nro > 0) {
-	            if ((nro & 1) == 1) {
+	        while (number > 0) {
+	            if ((number & 1) == 1) {
 	                if (count > max) {
 	                    max = count;
 	                }
@@ -27,7 +26,7 @@ public class BinaryGap {
 	                    count++;
 	                }
 	            }
-	            nro = nro >> 1;
+	            number = number >> 1;
 	        }
 	        return max == -1 ? 0 : max;
 	    }
