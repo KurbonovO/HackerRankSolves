@@ -1,8 +1,8 @@
-package hacker_rank;
+package crackingTheCodingInterviewHackerRank;
 
 import java.util.Scanner;
 
-public class Given_an_array_of_an_n_integers_perform_d_left_rotation {
+public class DATASTRUCTURES_Arrays_LeftRotation {
 
 	public static int[] rotateArray(int[] arr, int d) {
 
