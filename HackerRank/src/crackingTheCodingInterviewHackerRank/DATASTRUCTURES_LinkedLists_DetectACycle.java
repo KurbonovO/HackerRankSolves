@@ -13,7 +13,7 @@ To solve this problem we must traverse the list using two pointers that we'll re
 Our slow pointer moves forward 1 node at a time, and our fast pointer moves forward 2 nodes at a time.
 If at any point in time these pointers refer to the same object, then there is a loop; otherwise, the list does not contain a loop. 
 */
-public class LinkedListsDetectACycle {
+public class DATASTRUCTURES_LinkedLists_DetectACycle {
 
 	boolean hasCycle(Node head) {
 	    Node fast = head;
