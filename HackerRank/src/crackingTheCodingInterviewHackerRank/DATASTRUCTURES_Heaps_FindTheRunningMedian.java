@@ -11,11 +11,11 @@ If your dataset contains an even number of elements, the median is the average o
 of the sorted sample. In the sorted dataset {1,2,3,4}, (2+3)/2 = 2.5 is the median.  
 */
 
-public class DATASTRUCTURES_HeapsFindTheRunningMedian {
+public class DATASTRUCTURES_Heaps_FindTheRunningMedian {
 	PriorityQueue<Integer> minHeap;
 	PriorityQueue<Integer> maxHeap;
 
-	DATASTRUCTURES_HeapsFindTheRunningMedian() {
+	DATASTRUCTURES_Heaps_FindTheRunningMedian() {
 		this.minHeap = new PriorityQueue<Integer>();
 		this.maxHeap = new PriorityQueue<Integer>(10, new MedianComparator());
 	}
@@ -63,7 +63,7 @@ public class DATASTRUCTURES_HeapsFindTheRunningMedian {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 
-		DATASTRUCTURES_HeapsFindTheRunningMedian solution = new DATASTRUCTURES_HeapsFindTheRunningMedian();
+		DATASTRUCTURES_Heaps_FindTheRunningMedian solution = new DATASTRUCTURES_Heaps_FindTheRunningMedian();
 
 		for (int i = 1; i <= n; i++) {
 			int value = scanner.nextInt();
