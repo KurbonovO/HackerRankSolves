@@ -1,19 +1,26 @@
-package hacker_rank;
+package crackingTheCodingInterviewHackerRank;
 
 import java.util.Scanner;
 
-/*
-The array is not sorted, and its initial values are: 3 2 1  The following 3 swaps take place:
-	3 2 1 -> 2 3 1
-	2 3 1 -> 2 1 3
-	2 1 3 -> 1 2 3
-*/
+/*Sample Input:
+3
+3 2 1
+Sample Output:
+Array is sorted in 3 swaps.
+First Element: 1
+Last Element: 3
+Explanation: 
+The array is not sorted, and its initial values are: {3,2,1}. The following 3 swaps take place:
+{3,2,1} -> {2,3,1}
+{2,3,1} -> {2,1,3}
+{2,1,3} -> {1,2,3}*/
 
-public class Sorting_Bubble_Sort {
+public class ALGORITHMS_Sorting_BubbleSort {
 	private static int[] array;
 
 	private static void bubbleSort() {
 		int n = array.length;
+
 		// number of swaps for all array iterations
 		int totalSwaps = 0;
 
@@ -30,6 +37,7 @@ public class Sorting_Bubble_Sort {
 					totalSwaps++;
 				}
 			}
+
 			if (numSwaps == 0) {
 				System.out.printf("Array is sorted in %d swaps.\n", totalSwaps);
 				System.out.printf("First Element: %d\n", array[0]);
