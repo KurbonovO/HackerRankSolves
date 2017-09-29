@@ -29,8 +29,11 @@ public class ALGORITHMS_BinarySearch_IceCreamParlor {
             }
             
             for(int i = 0; i < n; i++) {
+            	
                 for(int j = i + 1; j < n; j++) {
+                	
                     if(menu[i] + menu[j] == m) {
+                    	
                         System.out.println( (i + 1) + " " + (j + 1) );
                         break;
                     }
