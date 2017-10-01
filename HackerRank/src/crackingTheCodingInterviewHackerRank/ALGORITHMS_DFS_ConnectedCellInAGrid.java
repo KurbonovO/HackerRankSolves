@@ -41,7 +41,7 @@ public class ALGORITHMS_DFS_ConnectedCellInAGrid {
 			return false;
 			
 		} else {
-			// Current cell is valid (i.e., exists in matrix, is filled and not yet visited)
+		 // Current cell is valid (i.e., exists in matrix, is filled and not yet visited)
 			return true;
 		}
 	}
