@@ -37,9 +37,13 @@ public class HowManySubstrings {
 
     static class NumberOfSubstrings2 {
         public void solve(int testNumber, FastScanner in, FastPrinter out) {
-            int n = in.nextInt();
+            
+        	int n = in.nextInt();
+            
             int q = in.nextInt();
+            
             String s = in.next();
+            
             int[] a = new int[s.length() + 1];
             for (int i = 0; i < s.length(); i++) a[i] = s.charAt(i);
             int[] sa = SuffixArray.buildSuffixArray(a);
