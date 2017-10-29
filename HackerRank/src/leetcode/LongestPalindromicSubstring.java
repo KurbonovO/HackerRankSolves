@@ -26,10 +26,12 @@ public class LongestPalindromicSubstring {
 	}
 
 	private void extendPalindrome(String s, int j, int k) {
-		while (j >= 0 && k < s.length() && s.charAt(j) == s.charAt(k)) {
+		
+		while ( j >= 0 && k < s.length() && s.charAt(j) == s.charAt(k) ) {
 			j--;
 			k++;
 		}
+		
 		if (maxLen < k - j - 1) {
 			lo = j + 1;
 			maxLen = k - j - 1;
