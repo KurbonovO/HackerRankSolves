@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.stream.Stream;
 
-/*Given two strings representing two complex numbers. You need to return a string representing their multiplication.
+/*537 Given two strings representing two complex numbers. You need to return a string representing their multiplication.
 Note i^2 = -1 according to the definition. Multiplication of two complex numbers can be done as:
 (a + ib) * (x+iy) = ax + i^2by + i(bx+ay) = ax - by + i(bx+ay) */
 

@@ -1,6 +1,6 @@
 package leetcode;
 
-/*Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000.
+/*5 Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000.
 Some people will be tempted to come up with a quick solution, which is unfortunately flawed (however can be corrected easily):
 Reverse S and become S'. Find the longest common substring between S and S', which must also be the longest palindromic substring.
 For example, S = "caba", S'= "abac" The longest common substring between S and S' is which is the answer.
