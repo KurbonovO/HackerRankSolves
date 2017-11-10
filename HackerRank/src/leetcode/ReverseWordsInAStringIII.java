@@ -13,13 +13,16 @@ public class ReverseWordsInAStringIII {
 		
 		for (int i = 0; i < ca.length; i++) {
 			
-			if (ca[i] != ' ') { // when i is a non-space
+			if (ca[i] != ' ') { 
+				
+				// when i is a non-space
 				int j = i;
 				
 				while (j + 1 < ca.length && ca[j + 1] != ' ') {
 					
-					j++;
-				} // move j to the end of the word
+					j++;	
+				} 
+				// move j to the end of the word
 				reverse(ca, i, j);
 				i = j;
 			}
@@ -29,6 +32,7 @@ public class ReverseWordsInAStringIII {
 
 	private void reverse(char[] ca, int i, int j) {
 		for (; i < j; i++, j--) {
+			
 			char tmp = ca[i];
 			ca[i] = ca[j];
 			ca[j] = tmp;

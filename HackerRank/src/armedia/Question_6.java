@@ -13,9 +13,9 @@ public class Question_6 {
 			if(startWorld) {
 				System.out.println(name.charAt(i));
 			}
-			if(name.charAt(i) == '') {
-				startWorld = true;
-			}
+			//if(name.charAt(i) == '') {
+			//	startWorld = true;
+			//}
 			else {
 				startWorld = false;
 			}
