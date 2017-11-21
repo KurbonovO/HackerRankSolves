@@ -6,7 +6,7 @@ import java.util.Set;
 
 /*Given two strings, a and b, determine if they share a common substring.
 There are two concepts involved in solving this challenge: Understanding that a single character is a valid substring.
-Deducing that we only need to know that the two strings have a common substring — we don't need to know what that substring is*/
+Deducing that we only need to know that the two strings have a common substring  we don't need to know what that substring is*/
 
 public class TwoStrings {
     

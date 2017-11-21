@@ -4,7 +4,7 @@ package leetcode;
 Some people will be tempted to come up with a quick solution, which is unfortunately flawed (however can be corrected easily):
 Reverse S and become S'. Find the longest common substring between S and S', which must also be the longest palindromic substring.
 For example, S = "caba", S'= "abac" The longest common substring between S and S' is which is the answer.
-Another example: S = "abacdfgdcaba", S' = ”abacdgfdcaba” The longest common substring between S and S' is 
+Another example: S = "abacdfgdcaba", S' = abacdgfdcaba The longest common substring between S and S' is
 "abacd". Clearly, this is not a valid palindrome*/
 
 public class LongestPalindromicSubstring {
