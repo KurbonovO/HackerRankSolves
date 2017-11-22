@@ -12,7 +12,9 @@ last valid round's points.
 4) "C" (an operation, which isn't a round's score): Represents the last valid round's points you get were
 invalid and should be removed.
 Each round's operation is permanent and could have an impact on the round before and the round after.
-You need to return the sum of the points you could get in all the rounds*/
+You need to return the sum of the points you could get in all the rounds
+*!*Let's maintain the value of each valid round on a stack as we process the data. A stack is ideal since we only
+deal with operations involving the last or second-last valid round.*/
 
 public class BaseballGame {
 	public int calPoints(String[] ops) {
