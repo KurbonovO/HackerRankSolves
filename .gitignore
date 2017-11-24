@@ -1,4 +1,7 @@
 .metadata
+.idea
+.idea/
+.idea/*
 bin/
 tmp/
 *.tmp
