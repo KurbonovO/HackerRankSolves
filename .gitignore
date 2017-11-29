@@ -2,6 +2,9 @@
 .idea
 .idea/
 .idea/*
+.sonarlint
+.sonarlint/
+.sonarlint/*
 bin/
 tmp/
 *.tmp
