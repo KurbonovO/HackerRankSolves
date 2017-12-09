@@ -15,5 +15,7 @@ W
 'src/leetcode/PalindromicSubstrings.java,2\2\22debf023335476b8bd2412a95cb39160eebeb70
 `
 0src/leetcode/FractionAdditionAndSubtraction.java,8/7/876ef67b6804f2ec0760ec19ed5157e887825869
-Z
-*src/leetcode/ImplementMagicDictionary.java,8/7/873215556ebe5ad7bf202fe4bcb3c191a5234ed6
+^
+.src/leetcode/DeleteOperationForTwoStrings.java,c\d\cd15e08284523594d3169fd928c4a0240486446f
+N
+src/leetcode/Permutations.java,a\a\aabac8381d4b27f0812f07a34c17af1e44f6018b
