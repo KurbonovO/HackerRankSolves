@@ -19,3 +19,5 @@ W
 .src/leetcode/DeleteOperationForTwoStrings.java,c\d\cd15e08284523594d3169fd928c4a0240486446f
 N
 src/leetcode/Permutations.java,a\a\aabac8381d4b27f0812f07a34c17af1e44f6018b
+O
+src/leetcode/MyCalendar_II.java,0\2\02822bf61432010a0b78f91efd851700781f51ab
