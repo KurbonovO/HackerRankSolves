@@ -17,3 +17,5 @@ W
 0src/leetcode/FractionAdditionAndSubtraction.java,8/7/876ef67b6804f2ec0760ec19ed5157e887825869
 Z
 *src/leetcode/ImplementMagicDictionary.java,8/7/873215556ebe5ad7bf202fe4bcb3c191a5234ed6
+M
+src/leetcode/MapSumPairs.java,d/8/d8dadf27bdac4398c9becc3c98d7169e52717421
