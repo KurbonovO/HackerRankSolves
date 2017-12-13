@@ -20,6 +20,5 @@ public class If_n_is_odd_print_weird {
 			answear = "Not Weird";
 		}
 		System.out.println(answear);
-
 	}
 }
