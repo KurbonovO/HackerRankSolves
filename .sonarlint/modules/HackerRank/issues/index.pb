@@ -27,3 +27,7 @@ V
 &src/leetcode/RepeatedDNASequences.java,3\c\3cb09fab928b86c8ffd20d4e0f5ddd23cee3a378
 Y
 )src/leetcode/IntersectionOfTwoArrays.java,e\7\e76a170dbbe9336ee810bb0470a8a9d9625e4184
+[
++src/leetcode/RegularExpressionMatching.java,1/5/158b06a1caf419364f20111ecd311137d865cad5
+Q
+!src/leetcode/CountOfRangeSum.java,f/c/fcb0cd20beed41612a2e59e409594f97c39dffbd

@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode_Medium;
 
 /*529 You are given a 2D char matrix representing the game board. 'M' represents an unrevealed
 mine, 'E' represents an unrevealed empty square, 'B' represents a revealed blank square that
