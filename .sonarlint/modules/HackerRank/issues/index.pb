@@ -23,3 +23,7 @@ O
 src/leetcode/MyCalendar_II.java,0\2\02822bf61432010a0b78f91efd851700781f51ab
 T
 $src/leetcode/OneThreeTwoPattern.java,d\a\daa5ae6b17902810d90d46bdad3a2fa25d35f545
+M
+src/leetcode/MapSumPairs.java,d/8/d8dadf27bdac4398c9becc3c98d7169e52717421
+[
++src/leetcode/RegularExpressionMatching.java,1/5/158b06a1caf419364f20111ecd311137d865cad5
