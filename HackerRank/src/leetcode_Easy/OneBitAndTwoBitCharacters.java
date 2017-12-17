@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode_Easy;
 
 /*717 We have two special characters. The first character can be represented by one bit 0. The second
 character can be represented by two bits (10 or 11). Now given a string represented by several bits.

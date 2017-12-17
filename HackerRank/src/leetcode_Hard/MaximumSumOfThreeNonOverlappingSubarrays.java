@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode_Hard;
 
 /*689 In a given array nums of positive integers, find three non-overlapping subarrays with maximum sum.Each subarray
 will be of size k, and we want to maximize the sum of all 3*k entries. Return the result as a list of indices

@@ -1,4 +1,4 @@
-package leetcode;
+package util;
 
 /*ListNode is a class for storing a single node of a linked list storing integer values. It has two public data
 fields for the data and the link to the next node in the list and has three constructors:

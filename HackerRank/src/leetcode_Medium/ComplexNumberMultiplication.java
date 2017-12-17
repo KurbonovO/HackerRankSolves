@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode_Medium;
 
 import java.util.stream.Stream;
 

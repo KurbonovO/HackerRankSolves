@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode_Easy;
 
 /*461 The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 Given two integers x and y, calculate the Hamming distance. Note: 0 <_ x, y < 231.

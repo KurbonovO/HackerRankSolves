@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode_Medium;
 
 /*5 Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000.
 Some people will be tempted to come up with a quick solution, which is unfortunately flawed (however can be corrected easily):
