@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode_Medium;
 
 /*486 Given an array of scores that are non-negative integers. Player 1 picks one of the numbers from either end
 of the array followed by the player 2 and then player 1 and so on. Each time a player picks a number, that number will not be

@@ -1,4 +1,6 @@
-package leetcode;
+package leetcode_Medium;
+
+import leetcode.ListNode;
 
 /*725 Given a (singly) linked list with head node root, write a function to split the linked list into k
 consecutive linked list "parts".The length of each part should be as equal as possible: no two parts should have

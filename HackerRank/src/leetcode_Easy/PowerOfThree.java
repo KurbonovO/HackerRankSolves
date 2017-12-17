@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode_Easy;
 
 /*326 Given an integer, write a function to determine if it is a power of three.
 Could you do it without using any loop / recursion?*/
