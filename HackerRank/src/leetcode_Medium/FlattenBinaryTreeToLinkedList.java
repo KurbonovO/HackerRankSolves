@@ -1,6 +1,6 @@
 package leetcode_Medium;
 
-import javax.swing.tree.TreeNode;
+import util.TreeNode;
 
 /*Given a binary tree, flatten it to a linked list in-place.
 Given
