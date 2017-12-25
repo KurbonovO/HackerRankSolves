@@ -2,6 +2,8 @@ package leetcode_Medium;
 
 import util.TreeNode;
 
+/*106 Given inorder and postorder traversal of a tree, construct the binary tree.	*/
+
 public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
 	
 	int pInorder;   // index of inorder array
