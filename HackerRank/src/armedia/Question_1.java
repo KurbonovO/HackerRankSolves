@@ -3,6 +3,7 @@ package armedia;
 public class Question_1 {
 
 	public static void main(String[] args) {
+		
 		char[][] pic = new char[6][6];
 		
 		for (int i = 0; i < 6; i++) {

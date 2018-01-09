@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="crackingTheCodingInterviewHackerRank/|armedia/" kind="src" path="HackerRank/src"/>
+	<classpathentry kind="src" path="HackerRank/src/armedia"/>
+	<classpathentry kind="src" path="HackerRank/src/crackingTheCodingInterviewHackerRank"/>
+	<classpathentry kind="output" path="HackerRank/bin"/>
+</classpath>
