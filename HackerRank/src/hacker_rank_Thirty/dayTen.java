@@ -16,14 +16,19 @@ is 2					*/
 
 public class dayTen {
 	public static void main(String[] args) {
+		
 		Scanner in = new Scanner(System.in);
+		
 		int n = in.nextInt();
 		in.close();
 
 		int sum = 0, max = 0;
+		
 		while (n > 0) {
+			
 			if (n % 2 == 1) {
 				sum++;
+				
 				if (sum > max) {
 					max = sum;
 				}
