@@ -10,7 +10,7 @@ to query your phone book for. For each named queried, print the associated entry
 your phone book on a new line in the form name = phoneNumber; if an entry for name
 is not found, print Not found instead										  */
 
-public class dayEight {
+public class DayEight {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		

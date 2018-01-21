@@ -2,7 +2,7 @@ package hacker_rank_Thirty;
 
 import java.util.Scanner;
 
-public class dayNine {
+public class DayNine {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();

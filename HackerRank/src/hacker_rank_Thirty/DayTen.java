@@ -14,7 +14,7 @@ Sample Case 2:
 The binary representation of 13 is 1101, so the maximum number of consecutive 1's
 is 2					*/
 
-public class dayTen {
+public class DayTen {
 	public static void main(String[] args) {
 		
 		Scanner in = new Scanner(System.in);
