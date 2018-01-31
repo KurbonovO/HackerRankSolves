@@ -14,7 +14,7 @@ attempt to convert it to an integer. Thus, we print the 3.
 Sample Case 2 does not contain any integers, so an attempt to convert it to an
 integer will raise an exception. Thus, our exception handler prints Bad String*/
 
-public class Sixteen {
+public class DaySixteen {
 	public static void main(String[] args) {
 
 		try (Scanner scanner = new Scanner(System.in);) {
