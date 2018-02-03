@@ -19,14 +19,16 @@ sample Input :2 												Sample Output:
 public class DayFive {
 	public static void main(String[] args) {
 
-		Scanner scan = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 
 		int N;
-		N = scan.nextInt();
+		N = scanner.nextInt();
+
+		scanner.close();
 
 		for (int i = 1; i < 11; i++) {
 			int sum = N * i;
-			
+
 			System.out.println(N + " x " + i + " = " + sum);
 		}
 	}
