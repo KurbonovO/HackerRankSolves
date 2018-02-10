@@ -6,6 +6,7 @@ public class TreeNode {
 	public TreeNode left;
 	public TreeNode right;
 	public TreeNode next;
+	public int data;
 	
 	public TreeNode(int x) {
 		val = x;

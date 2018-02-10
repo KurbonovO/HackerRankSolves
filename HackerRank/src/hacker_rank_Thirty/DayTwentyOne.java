@@ -26,8 +26,10 @@ public class DayTwentyOne {
             stringArray[i] = scanner.next();
         }
         
-        Printer<Integer> intPrinter = new Printer<Integer>();
-        Printer<String> stringPrinter = new Printer<String>();
+        scanner.close();
+        
+        Printer intPrinter = new Printer();
+        Printer stringPrinter = new Printer();
         intPrinter.printArray( intArray  );
         stringPrinter.printArray( stringArray );
         if(Printer.class.getDeclaredMethods().length > 1){
