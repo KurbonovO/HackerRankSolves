@@ -1,8 +1,6 @@
 package hacker_rank_Thirty;
 
 import java.util.Scanner;
-
-import util.ListNode;
 import util.TreeNode;
 
 /*The height of a binary search tree is the number of edges between the tree's

@@ -39,7 +39,6 @@ public class DATASTRUCTURES_Queues_TaleOfTwoStacks <E> {
     }
     
     public Object peek() {
-        Object peek;
         
         if(stack2.empty()) {
             while(!stack1.empty()) {

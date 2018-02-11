@@ -38,7 +38,7 @@ class Graph {
     public int start;
     
     public Graph(int n, int edgeWeight) {
-        this.EDGE_DISTANCE = edgeWeight;
+        Graph.EDGE_DISTANCE = edgeWeight;
         
         this.distance = new int[n];
         Arrays.fill(distance, -1);
