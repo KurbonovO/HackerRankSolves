@@ -14,7 +14,7 @@ public class RemoveComments {
 		
         boolean inBlock = false;
         StringBuilder newline = new StringBuilder();
-        List<String> ans = new ArrayList();
+        List<String> answear = new ArrayList<>();
         
         for (String line: source) {
             int i = 0;
@@ -43,10 +43,10 @@ public class RemoveComments {
                 
             }
             if (!inBlock && newline.length() > 0) {
-                ans.add(new String(newline));
+                answear.add(new String(newline));
             }
         }
-        return ans;
+        return answear;
     }
 }
 

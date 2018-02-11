@@ -18,18 +18,21 @@ Output: "2/1"*/
 public class FractionAdditionAndSubtraction {
 	public String fractionAddition(String expression) {
 		
-		Scanner sc = new Scanner(expression).useDelimiter("/|(?=[-+])");
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(expression).useDelimiter("/|(?=[-+])");
 		
 		int A = 0, B = 1;
 		
-		while (sc.hasNext()) {
-			int a = sc.nextInt(), b = sc.nextInt();
+		while ( scanner.hasNext() ) {
+			
+			int a = scanner.nextInt(), b = scanner.nextInt();
 			A = A * b + a * B;
 			B *= b;
 			int g = gcd(A, B);
 			A /= g;
 			B /= g;
 		}
+		
 		return A + "/" + B;
 	}
 

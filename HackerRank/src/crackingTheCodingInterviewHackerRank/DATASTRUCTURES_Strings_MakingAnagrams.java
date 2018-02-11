@@ -41,9 +41,12 @@ public class DATASTRUCTURES_Strings_MakingAnagrams {
 	}
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		String a = in.next();
-		String b = in.next();
+		
+		Scanner scanner = new Scanner(System.in);
+		String a = scanner.next();
+		String b = scanner.next();
+		scanner.close();
+		
 		System.out.println(numberNeeded(a, b));
 	}
 }

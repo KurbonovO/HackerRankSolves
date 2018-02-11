@@ -14,21 +14,22 @@ Player 1 first chooses 1. Then player 2 have to choose between 5 and 7. No matte
 choose 233. Finally, player 1 has more score (234) than player 2 (12), so you need to return True representing player1 can win*/
 
 public class PredictTheWinner {
-	public boolean PredictTheWinner(int[] nums) {
-		
+	public boolean PredictTheWinnerMethod(int[] nums) {
+
 		int n = nums.length;
 		int[][] dp = new int[n][n];
-		
+
 		for (int i = 0; i < n; i++) {
 			dp[i][i] = nums[i];
 		}
-		
+
 		for (int len = 1; len < n; len++) {
-			
+
 			for (int i = 0; i < n - len; i++) {
-				
+
 				int j = i + len;
-				dp[i][j] = Math.max(nums[i] - dp[i + 1][j], nums[j] - dp[i][j - 1]);
+				dp[i][j] = Math.max(nums[i] - dp[i + 1][j],
+						nums[j] - dp[i][j - 1]);
 			}
 		}
 		return dp[0][n - 1] >= 0;

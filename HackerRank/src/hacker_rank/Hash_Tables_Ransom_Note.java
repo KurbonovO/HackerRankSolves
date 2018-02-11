@@ -59,8 +59,6 @@ public class Hash_Tables_Ransom_Note {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int m = scanner.nextInt();
-		int n = scanner.nextInt();
 
 		// Eat whitespace to beginning of next line
 		scanner.nextLine();

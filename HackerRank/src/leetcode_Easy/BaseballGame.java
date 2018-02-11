@@ -19,7 +19,7 @@ deal with operations involving the last or second-last valid round.*/
 public class BaseballGame {
 	public int calPoints(String[] ops) {
 		
-		Stack<Integer> stack = new Stack();
+		Stack<Integer> stack = new Stack<Integer>();
 
 		for (String op : ops) {
 			
@@ -30,19 +30,24 @@ public class BaseballGame {
 				stack.push(top);
 				stack.push(newtop);
 			
-			} else if (op.equals("C")) {
+			} 
+			else if (op.equals("C")) {
 				stack.pop();
 			
-			} else if (op.equals("D")) {
+			} 
+			else if (op.equals("D")) {
 				stack.push(2 * stack.peek());
 			
-			} else {
+			} 
+			else {
 				stack.push(Integer.valueOf(op));
 			}
 		}
 		int ans = 0;
+		
 		for (int score : stack)
 			ans += score;
+		
 		return ans;
 	}
 }
