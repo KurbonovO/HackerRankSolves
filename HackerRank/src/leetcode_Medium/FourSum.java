@@ -99,8 +99,8 @@ public class FourSum {
 	/*
 	 * Find all possible distinguished two numbers adding up to the target in
 	 * sorted array nums[] between indices low and high. If there are, add all
-	 * of them into the ArrayList fourSumList, using
-	 * fourSumList.add(Arrays.asList(z1, z2, the two numbers))
+	 * of them into the ArrayList fourSumList, using fourSumList.add
+	 * (Arrays.asList(z1, z2, the two numbers))
 	 */
 	public void twoSumForFourSum(int[] nums, int target, int low, int high,
 			ArrayList<List<Integer>> fourSumList, int z1, int z2) {
