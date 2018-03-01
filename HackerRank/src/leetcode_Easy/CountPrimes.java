@@ -1,6 +1,6 @@
 package leetcode_Easy;
 
-/*Count the number of prime numbers less than a non-negative number, n		  */
+/*204 Count the number of prime numbers less than a non-negative number, n	  */
 
 public class CountPrimes {
 	public int countPrimes(int n) {
