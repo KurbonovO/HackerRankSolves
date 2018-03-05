@@ -2,7 +2,7 @@ package leetcode_Medium;
 
 import java.util.HashSet;
 
-/*Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules. The
+/*36 Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules. The
 Sudoku board could be partially filled, where empty cells are filled with the 
 character '.'																  */
 
