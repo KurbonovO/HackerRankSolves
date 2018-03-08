@@ -10,12 +10,15 @@ public class Question_2 {
 	}
 
 	static void clsMethod1() {
+		
 		try {
 			clsMethod2();
 			System.out.println("a");
-		} catch (ArithmeticException e) {
+		} 
+		catch (ArithmeticException e) {
 			System.out.println("b");
-		} finally {
+		} 
+		finally {
 			System.out.println("c");
 		}
 		System.out.println("d");
