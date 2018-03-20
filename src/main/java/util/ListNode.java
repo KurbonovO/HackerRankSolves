@@ -10,7 +10,8 @@ fields for the data and the link to the next node in the list and has three cons
      creates node with given data and given link*/
 
 public class ListNode {
-	
+
+    public int val;
 	public int data;       // data stored in this node
     public ListNode next;  // link to next node in the list
 
