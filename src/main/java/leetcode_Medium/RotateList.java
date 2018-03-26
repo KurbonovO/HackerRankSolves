@@ -2,8 +2,8 @@ package leetcode_Medium;
 
 import util.ListNode;
 
-/*Given a list, rotate the list to the right by k places, where k is non-negative.
-Given 1->2->3->4->5->NULL and k = 2, return 4->5->1->2->3->NULL					*/
+/*61 Given a list, rotate the list to the right by k places, where k is 
+non-negative Given 1->2->3->4->5->NULL and k = 2, return 4->5->1->2->3->NU	 */
 
 public class RotateList {
 	public ListNode rotateRight(ListNode head, int k) {
