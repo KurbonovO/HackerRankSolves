@@ -15,11 +15,11 @@ public class SumOfLeftLeaves {
 	
 	int sum;
 
-	public int sumOfLeftLeaves(TreeNode root) {
+	public int sumOfLeftLeaves(TreeNode treeNode) {
 		sum = 0;
 		
 	 /* false means the next node is not in the left side */
-		inOrder(root, false); 
+		inOrder(treeNode, false); 
 
 		return sum;
 	}

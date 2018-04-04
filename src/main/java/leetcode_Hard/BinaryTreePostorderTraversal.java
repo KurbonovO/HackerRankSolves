@@ -17,11 +17,11 @@ Given binary tree [1,null,2,3],
    3            return [3,2,1]                                               */
 
 public class BinaryTreePostorderTraversal {
-	public List<Integer> preorderTraversal(TreeNode root) {
+	public List<Integer> preorderTraversal(TreeNode treeNodeParam) {
 		
 		List<Integer> result = new ArrayList<>();
 		Deque<TreeNode> stack = new ArrayDeque<>();
-		TreeNode treeNode = root;
+		TreeNode treeNode = treeNodeParam;
 		
 		while (!stack.isEmpty() || treeNode != null) {
 			

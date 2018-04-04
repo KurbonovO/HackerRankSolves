@@ -6,30 +6,30 @@ import util.ListNode;
 non-negative Given 1->2->3->4->5->NULL and k = 2, return 4->5->1->2->3->NU	 */
 
 public class RotateList {
-	public ListNode rotateRight(ListNode head, int k) {
+	public ListNode rotateRight(ListNode listNodeParam, int n) {
 		
-		if (head != null) {
-			ListNode kth = head;
+		if (listNodeParam != null) {
+			ListNode listNode = listNodeParam;
 			
-			for (int size = size(head), i = (k % size) + 1; i < size; i++)
-				kth = kth.next;
+			for (int size = size(listNodeParam), i = (n % size) + 1; i < size; i++)
+				listNode = listNode.next;
 
-			ListNode end = kth;
+			ListNode end = listNode;
 			
 			while (end.next != null)
 				end = end.next;
 
-			end.next = head;
-			head = kth.next;
-			kth.next = null;
+			end.next = listNodeParam;
+			listNodeParam = listNode.next;
+			listNode.next = null;
 		}
-		return head;
+		return listNodeParam;
 	}
 
-	private static int size(ListNode head) {
+	private static int size(ListNode listNodeStaticInt) {
 		int result = 0;
 		
-		for (; head != null; head = head.next)
+		for (; listNodeStaticInt != null; listNodeStaticInt = listNodeStaticInt.next)
 			result++;
 		return result;
 	}
