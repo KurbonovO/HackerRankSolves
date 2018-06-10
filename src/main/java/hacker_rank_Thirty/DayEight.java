@@ -12,14 +12,14 @@ is not found, print Not found instead										  */
 
 public class DayEight {
 	public static void main(String[] args) {
+		
 		Scanner scan = new Scanner(System.in);
 		
 		Map<String, Integer> phoneBook = new HashMap<String, Integer>();
 		
+		int intN = scan.nextInt();
 		
-		int n = scan.nextInt();
-		
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < intN; i++) {
 			String name = scan.next();
 			int phone = scan.nextInt();
 			phoneBook.put(name, phone);
