@@ -18,7 +18,7 @@ public class MergeTwoBinaryTrees {
 		else if (treeNodeTwo == null)
 			return treeNodeOne;
 		
-		TreeNode treeNode = new TreeNode(treeNodeOne.val + treeNodeTwo.val);
+		TreeNode treeNode = new TreeNode(treeNodeOne.value + treeNodeTwo.value);
 		treeNode.left = mergeTrees(treeNodeOne.left, treeNodeTwo.left);
 		treeNode.right = mergeTrees(treeNodeOne.right, treeNodeTwo.right);
 		

@@ -27,7 +27,7 @@ public class SubtreeOfAnotherTree {
 		if (s == null || t == null)
 			return false;
 
-		if (s.val != t.val)
+		if (s.value != t.value)
 			return false;
 
 		return isSame(s.left, t.left) && isSame(s.right, t.right);

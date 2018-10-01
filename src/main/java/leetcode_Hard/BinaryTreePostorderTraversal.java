@@ -28,7 +28,7 @@ public class BinaryTreePostorderTraversal {
 			if (treeNode != null) {
 				stack.push(treeNode);
 			 /* Add before going to children */
-				result.add(treeNode.val); 
+				result.add(treeNode.value); 
 				treeNode = treeNode.left;
 			} 
 			else {

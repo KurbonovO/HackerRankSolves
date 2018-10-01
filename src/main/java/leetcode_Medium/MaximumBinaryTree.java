@@ -23,7 +23,7 @@ public class MaximumBinaryTree {
 		for (int i = 0; i < intArrayInput.length; i++) {
 			TreeNode curr = new TreeNode(intArrayInput[i]);
 			
-			while (!stack.isEmpty() && stack.peek().val < intArrayInput[i]) {
+			while (!stack.isEmpty() && stack.peek().value < intArrayInput[i]) {
 				curr.left = stack.pop();
 			}
 			

@@ -21,10 +21,10 @@ public class PathSum {
 		}
 
 		if (treeNodeInput.left == null && treeNodeInput.right == null) {
-			return intKInput == treeNodeInput.val;
+			return intKInput == treeNodeInput.value;
 		}
 
-		return hasPathSum(intKInput - treeNodeInput.val, treeNodeInput.left)
-				|| hasPathSum(intKInput - treeNodeInput.val, treeNodeInput.right);
+		return hasPathSum(intKInput - treeNodeInput.value, treeNodeInput.left)
+				|| hasPathSum(intKInput - treeNodeInput.value, treeNodeInput.right);
 	}
 }

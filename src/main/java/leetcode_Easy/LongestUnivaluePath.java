@@ -35,9 +35,9 @@ public class LongestUnivaluePath {
 		
 		int r = node.right != null ? dfs(node.right, res) : 0;
 		
-		int resl = node.left != null && node.left.val == node.val ? l + 1 : 0;
+		int resl = node.left != null && node.left.value == node.value ? l + 1 : 0;
 		
-		int resr = node.right != null && node.right.val == node.val ? r + 1 : 0;
+		int resr = node.right != null && node.right.value == node.value ? r + 1 : 0;
 		
 		res[0] = Math.max(res[0], resl + resr);
 		

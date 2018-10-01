@@ -13,9 +13,9 @@ public class TrimABinarySearchTree {
 		if (treeNode == null)
 			return null;
 
-		if (treeNode.val < intL)
+		if (treeNode.value < intL)
 			return trimBST(treeNode.right, intL, intR);
-		if (treeNode.val > intR)
+		if (treeNode.value > intR)
 			return trimBST(treeNode.left, intL, intR);
 
 		treeNode.left = trimBST(treeNode.left, intL, intR);
