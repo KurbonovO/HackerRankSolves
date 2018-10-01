@@ -34,7 +34,7 @@ public class SumOfLeftLeaves {
 		
 	 /* only left leaves can be added to result */
 		if (root.left == null && root.right == null && left) { 
-			sum += root.val;
+			sum += root.value;
 		}
 		inOrder(root.right, false);
 	}

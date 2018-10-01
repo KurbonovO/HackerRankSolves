@@ -44,7 +44,7 @@ public class BinaryTreeLevelOrderTraversal {
 				if (queue.peek().right != null) {
 					queue.offer(queue.peek().right);
 				}
-				subList.add(queue.poll().val);
+				subList.add(queue.poll().value);
 			}
 			wrapList.add(subList);
 		}
