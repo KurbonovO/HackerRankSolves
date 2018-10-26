@@ -15,7 +15,7 @@ Input: [[1, 5, [2, 3]], [2, 3, []], [3, 3, []]], 1		Output: 11
 Employee 1 has importance value 5, and he has two direct s					 */
 
 public class EmployeeImportance {
-	public int getImportance(List<Employee> employees, int id) {
+	/*public int getImportance(List<Employee> employees, int id) {
 		int result = 0;
 		
 		for (int i = 0; i < employees.size(); i++) {
@@ -30,5 +30,5 @@ public class EmployeeImportance {
 			}
 		}
 		return result;
-	}
+	}*/
 }
