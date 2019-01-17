@@ -33,9 +33,9 @@ public class DeleteNodeInABST {
 			return null;
 		}
 
-		if (key < root.value) {
+		if (key < root.root) {
 			root.left = deleteNode(root.left, key);
-		} else if (key > root.value) {
+		} else if (key > root.root) {
 			root.right = deleteNode(root.right, key);
 		} else {
 
@@ -46,8 +46,8 @@ public class DeleteNodeInABST {
 			}
 
 			TreeNode minNode = findMin(root.right);
-			root.value = minNode.value;
-			root.right = deleteNode(root.right, root.value);
+			root.root = minNode.root;
+			root.right = deleteNode(root.right, root.root);
 		}
 		return root;
 	}
