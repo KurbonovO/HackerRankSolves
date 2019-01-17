@@ -38,7 +38,7 @@ public class KthSmallestElementInABST {
 			} else {
 				TreeNode node = stackTreeNode.pop();
 				if (++count == intN)
-					return node.value;
+					return node.root;
 				treeNodeFromInput = node.right;
 			}
 		}

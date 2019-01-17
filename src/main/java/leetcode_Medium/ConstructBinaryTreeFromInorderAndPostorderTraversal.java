@@ -18,14 +18,14 @@ public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
 		TreeNode n = new TreeNode(postorder[pPostorder--]);
 		
 	  //if right node exist, create right subtree
-		if (inorder[pInorder] != n.value) {
+		if (inorder[pInorder] != n.root) {
 			n.right = buildTree(inorder, postorder, n);
 		}
 		
 		pInorder--;
 		
 	  //if left node exist, create left subtree
-		if ((end == null) || (inorder[pInorder] != end.value)) {
+		if ((end == null) || (inorder[pInorder] != end.root)) {
 			n.left = buildTree(inorder, postorder, end);
 		}
 		return n;
