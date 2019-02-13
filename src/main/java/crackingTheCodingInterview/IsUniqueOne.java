@@ -21,7 +21,7 @@ class IsUniqueOne {
 	public static void main(String[] args) {
 
 		IsUniqueOne isUniqueDriver = new IsUniqueOne();
-		if (isUniqueDriver.isUniqueOne("abcd10jka")) {
+		if (isUniqueDriver.isUniqueOne("abcd10jk")) {
 			System.out.println("unique");
 		} else {
 			System.out.println("duplicate");
