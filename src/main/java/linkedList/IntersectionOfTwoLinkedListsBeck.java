@@ -10,9 +10,6 @@ public class IntersectionOfTwoLinkedListsBeck {
 			return a;
 		}
 
-		if (a == null && b == null) {
-		}
-
 		while (a != b) {
 
 			while (a != null && a.next != null) {
