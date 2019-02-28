@@ -3,6 +3,10 @@ package leetcode_Easy;
 public class RotateStringBeck {
 	public boolean rotateStringBeck(String A, String B) {
 
+		if (A.length() != B.length()) {
+			return false;
+		}
+
 		for (int i = 0; i < A.length(); i++) {
 
 			if (A.equals(B)) {
@@ -14,6 +18,7 @@ public class RotateStringBeck {
 		}
 		return false;
 	}
+
 	public static void main(String[] args) {
 
 		RotateStringBeck rotateStringBeck = new RotateStringBeck();
