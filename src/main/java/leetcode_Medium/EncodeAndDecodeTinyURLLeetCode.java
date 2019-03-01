@@ -1,0 +1,50 @@
+package leetcode_Medium;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class EncodeAndDecodeTinyURLLeetCode {
+
+	Map<String, String> index = new HashMap<String, String>();
+	Map<String, String> revIndex = new HashMap<String, String>();
+	static String BASE_HOST = "http://tinyurl.com/";
+
+	/* Encodes a url to a shortened url. */
+	public String encode(String longUrl) {
+
+		if (revIndex.containsKey(longUrl)) {
+			return BASE_HOST + revIndex.get(longUrl);
+		}
+
+		String charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		String key = null;
+
+		do {
+			StringBuilder sb = new StringBuilder();
+			for (int i = 0; i < 6; i++) {
+				int r = (int) (Math.random() * charSet.length());
+				sb.append(charSet.charAt(r));
+			}
+			key = sb.toString();
+		} while (index.containsKey(key));
+
+		index.put(key, longUrl);
+		revIndex.put(longUrl, key);
+		return BASE_HOST + key;
+	}
+
+	/* Decodes a shortened url to its original url */
+	public String decode(String shortUrl) {
+
+		String shortenedUrl = index.get(shortUrl.replace(BASE_HOST, ""));
+		return shortenedUrl;
+	}
+
+	public static void main(String[] args) {
+
+		EncodeAndDecodeTinyURLLeetCode encodeAndDecodeTinyURLLeetCode = new EncodeAndDecodeTinyURLLeetCode();
+		String url = "https://leetcode.com/problems/design-tinyurl";
+		System.out.println(encodeAndDecodeTinyURLLeetCode.encode(url));
+		System.out.println(encodeAndDecodeTinyURLLeetCode.decode(encodeAndDecodeTinyURLLeetCode.encode(url)));
+	}
+}
