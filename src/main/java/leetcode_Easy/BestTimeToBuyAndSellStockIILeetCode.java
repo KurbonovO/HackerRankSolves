@@ -22,7 +22,5 @@ public class BestTimeToBuyAndSellStockIILeetCode {
 		int[] arr = { 7, 6, 5, 4, 3, 2, 1 };
 
 		System.out.println(bestTimeToBuyAndSellStockIILeetCode.bestTimeToBuyAndSellStockIILeetCode(arr));
-
 	}
-
 }
