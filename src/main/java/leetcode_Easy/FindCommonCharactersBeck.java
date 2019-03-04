@@ -44,5 +44,4 @@ public class FindCommonCharactersBeck {
 		String[] arr = { "bella", "label", "roller" };
 		System.out.println(findCommonCharactersBeck.findCommonCharactersBeck(arr));
 	}
-
 }
