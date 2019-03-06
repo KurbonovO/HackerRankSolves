@@ -2,7 +2,8 @@ package leetcode_Easy;
 
 import java.util.stream.IntStream;
 
-public class PalindromeOne {
+public class PalindromeApproaches {
+	
 	/** A Simple Approach */
 	public boolean palindromeOne(String input) {
 
@@ -64,10 +65,10 @@ public class PalindromeOne {
 	}
 
 	public static void main(String[] args) {
-		PalindromeOne palindromeOne = new PalindromeOne();
-		System.out.println(palindromeOne.palindromeOne("racecar"));
-		System.out.println(palindromeOne.palindromeTwo("racecar"));
-		System.out.println(palindromeOne.palindromeThree("racecar"));
+		PalindromeApproaches palindromeApproaches = new PalindromeApproaches();
+		System.out.println(palindromeApproaches.palindromeOne("racecar"));
+		System.out.println(palindromeApproaches.palindromeTwo("racecar"));
+		System.out.println(palindromeApproaches.palindromeThree("racecar"));
 		//System.out.println(palindromeOne.palindromeFour("racecar"));
 	}
 }
