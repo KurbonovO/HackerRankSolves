@@ -2,7 +2,7 @@ package leetcodeHard;
 
 import java.util.HashMap;
 
-public class MinimumWindowSubstring {
+public class MinimumWindowSubstringLeetCode {
 	public String minWindow(String s, String t) {
 		if (s == null || s.length() < t.length() || s.length() == 0) {
 			return "";
