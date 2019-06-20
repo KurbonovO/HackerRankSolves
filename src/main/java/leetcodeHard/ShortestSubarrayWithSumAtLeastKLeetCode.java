@@ -3,7 +3,7 @@ package leetcodeHard;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class ShortestSubarrayWithSumAtLeastK {
+public class ShortestSubarrayWithSumAtLeastKLeetCode {
 	
 	public int shortestSubarray(int[] A, int K) {
 		int N = A.length, res = N + 1;
