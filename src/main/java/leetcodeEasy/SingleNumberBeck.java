@@ -1,5 +1,8 @@
 package leetcodeEasy;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class SingleNumberBeck {
 
 	// Was not able to solve. Need to learn bitwise
@@ -33,11 +36,27 @@ public class SingleNumberBeck {
 		return result;
 	}
 
+	public static int singleNumberLeetCodeTwo(int[] nums) {
+
+		Set<Integer> result = new HashSet<Integer>();
+
+		for (int i : nums) {
+
+			if (!result.add(i)) {
+				
+				result.remove(i);
+			}
+		}
+		return result.iterator().next();
+	}
+
 	public static void main(String[] args) {
 
 		int[] nums = { 4, 1, 2, 1, 2 };
 
 		System.out.println(SingleNumberBeck.singleNumberLeetCode(nums));
+		
+		System.out.println(SingleNumberBeck.singleNumberLeetCodeTwo(nums));
 	}
 
 }
