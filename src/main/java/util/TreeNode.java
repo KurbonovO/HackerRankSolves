@@ -9,4 +9,10 @@ public class TreeNode {
 	public TreeNode(int x) {
 		this.root = x;
 	}
+
+	@Override
+	public String toString() {
+		return "TreeNode [root=" + root + ", left=" + left + ", right=" + right + "]";
+	}
+
 }
