@@ -34,12 +34,12 @@ public class TwoSumBeck {
 
 			if (map.containsKey(target - numbers[i])) {
 
-				result[1] = i + 1;
+				result[1] = i;
 				result[0] = map.get(target - numbers[i]);
 
 				return result;
 			}
-			map.put(numbers[i], i + 1);
+			map.put(numbers[i], i);
 		}
 		return result;
 	}
@@ -50,7 +50,7 @@ public class TwoSumBeck {
 		int target = 9;
 
 		System.out.println(Arrays.toString(TwoSumBeck.twoSumBeck(arr, target)));
-		
+
 		System.out.println(Arrays.toString(TwoSumBeck.twoSumLeetCode(arr, target)));
 	}
 
