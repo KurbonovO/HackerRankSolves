@@ -28,7 +28,7 @@ public class TwoSumBeck {
 
 		int[] result = new int[2];
 
-		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		Map<Integer, Integer> map = new HashMap<>();
 
 		for (int i = 0; i < numbers.length; i++) {
 
@@ -50,6 +50,8 @@ public class TwoSumBeck {
 		int target = 9;
 
 		System.out.println(Arrays.toString(TwoSumBeck.twoSumBeck(arr, target)));
+		
+		System.out.println(Arrays.toString(TwoSumBeck.twoSumLeetCode(arr, target)));
 	}
 
 }
