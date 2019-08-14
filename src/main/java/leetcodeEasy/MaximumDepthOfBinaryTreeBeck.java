@@ -4,38 +4,32 @@ import util.TreeNode;
 
 public class MaximumDepthOfBinaryTreeBeck {
 
-	public static int maxDepthBeck(TreeNode treeNode) {
+	public static int maxDepthBeck(TreeNode root) {
 
-		if (treeNode.left == null || treeNode.right == null) {
+		int countLeft = 1;
+		int countRight = 1;
 
+		while (root != null) {
+
+			if (root.left != null) {
+
+				countLeft++;
+			}
+			if (root.right != null) {
+
+				countRight++;
+			}
+		}
+		return Math.max(countLeft, countRight);
+	}
+
+	public static int maxDepthLeetCode(TreeNode root) {
+
+		if (root == null) {
 			return -1;
 		}
-
-		int counter = 0;
-
-		if (treeNode.left != null || treeNode.right != null) {
-
-			counter++;
-			maxDepthBeck(treeNode);
-		}
-		return counter;
+		int counter = Math.max(maxDepthLeetCode(root.left), maxDepthBeck(root.right));
+		int result = counter + 1;
+		return result;
 	}
-
-	public static int maxDepthLeetCode(TreeNode treeNode) {
-
-		if (treeNode == null) {
-
-			return -1;
-		}
-
-		int leftMax = treeNode.left == null ? 0 : maxDepthLeetCode(treeNode.left);
-		int rightMax = treeNode.right == null ? 0 : maxDepthLeetCode(treeNode.right);
-
-		return Math.max(leftMax, rightMax) + 1;
-	}
-
-	public static void main(String[] args) {
-
-	}
-
 }
