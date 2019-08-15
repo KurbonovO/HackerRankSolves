@@ -11,6 +11,6 @@ public class MergeKSortedListsBeck {
 		
 		
 		
-		
+		return null;
 	}
 }
