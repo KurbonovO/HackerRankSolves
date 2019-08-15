@@ -8,6 +8,9 @@ public class TestClass {
 		
 		HashMap<Integer, String> hm = new HashMap<>();
 		
+		hm.put(1, "Hello");
+		hm.put(1, "Hi");
+		
 		
 	}
 
