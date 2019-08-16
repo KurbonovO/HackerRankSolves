@@ -41,6 +41,6 @@ public class SetMatrixZeroesBeck {
 
 		int arr[][] = { { 1, 1, 1 }, { 1, 0, 1 }, { 1, 1, 1 } };
 
-		Arrays.toString(SetMatrixZeroesBeck.setZeroesLeetCode(arr));
+		System.out.println(Arrays.deepToString(SetMatrixZeroesBeck.setZeroesLeetCode(arr)));
 	}
 }
