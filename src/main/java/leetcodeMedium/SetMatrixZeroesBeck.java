@@ -8,15 +8,15 @@ public class SetMatrixZeroesBeck {
 
 	public static int[][] setZeroesLeetCode(int[][] matrix) {
 
-		int rows = matrix.length;
-		int collumns = matrix[0].length;
+		int column = matrix.length;
+		int row = matrix[0].length;
 
-		Set<Integer> rowSet = new HashSet<>();
 		Set<Integer> collumnsSet = new HashSet<>();
+		Set<Integer> rowSet = new HashSet<>();
 
-		for (int i = 0; i < rows; i++) {
+		for (int i = 0; i < column; i++) {
 
-			for (int j = 0; j < collumns; j++) {
+			for (int j = 0; j < row; j++) {
 
 				if (matrix[i][j] == 0) {
 					rowSet.add(i);
@@ -24,9 +24,9 @@ public class SetMatrixZeroesBeck {
 				}
 			}
 		}
-		for (int i = 0; i < rows; i++) {
+		for (int i = 0; i < column; i++) {
 
-			for (int j = 0; j < collumns; j++) {
+			for (int j = 0; j < row; j++) {
 
 				if (rowSet.contains(i) || collumnsSet.contains(j)) {
 
@@ -39,7 +39,7 @@ public class SetMatrixZeroesBeck {
 
 	public static void main(String[] args) {
 
-		int arr[][] = { { 1, 1, 1 }, { 1, 0, 1 }, { 1, 1, 1 } };
+		int arr[][] = { { 1, 2, 3,}, { 4, 5, 6 }, { 7, 8, 9 } };
 
 		System.out.println(Arrays.deepToString(SetMatrixZeroesBeck.setZeroesLeetCode(arr)));
 	}
