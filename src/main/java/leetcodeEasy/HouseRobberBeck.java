@@ -28,24 +28,23 @@ public class HouseRobberBeck {
 
 	public static int robLeetCode(int nums[]) {
 
-		int prev1 = 0;
-		int prev2 = 0;
+		int previous1 = 0;
+		int previous2 = 0;
 
 		for (int num : nums) {
 
-			int temp = prev1;
-			prev1 = Math.max(prev2 + num, prev1);
-			prev2 = temp;
+			int temp = previous1;
+			previous1 = Math.max(previous1, previous2 + num);
+			previous2 = temp;
 		}
-		return prev1;
+		return previous1;
 	}
 
 	public static void main(String[] args) {
 
-		int[] nums = { 2,7,9,3,1 };
+		int[] nums = { 2, 7, 9, 3, 1 };
 
 		System.out.println(HouseRobberBeck.robBeck(nums));
 		System.out.println(HouseRobberBeck.robLeetCode(nums));
 	}
-
 }
