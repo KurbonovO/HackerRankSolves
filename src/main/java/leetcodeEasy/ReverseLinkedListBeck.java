@@ -6,10 +6,6 @@ public class ReverseLinkedListBeck {
 
 	public static ListNode reverseList(ListNode head) {
 
-		if (head == null || head.next == null) {
-			return head;
-		}
-
 		ListNode prevHead = null;
 		
 		while (head != null) {
