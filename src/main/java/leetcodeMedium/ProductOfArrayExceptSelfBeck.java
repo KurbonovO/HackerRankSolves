@@ -29,6 +29,7 @@ public class ProductOfArrayExceptSelfBeck {
 		for (int i = inputArrLength - 1; i >= 0; i--) {
 
 			if (i < inputArrLength - 1) {
+				
 				right = right * inputArr[i + 1];
 			}
 			outputArr[i] *= right;
@@ -41,5 +42,4 @@ public class ProductOfArrayExceptSelfBeck {
 		int[] input = { 1, 2, 3, 4 };
 		System.out.println(Arrays.toString(ProductOfArrayExceptSelfBeck.productExceptSelf(input)));
 	}
-
 }
