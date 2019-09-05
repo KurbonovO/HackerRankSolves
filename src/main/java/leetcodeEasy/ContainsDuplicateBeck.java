@@ -16,7 +16,6 @@ public class ContainsDuplicateBeck {
 				return true;
 			}
 			set.add(nums[i]);
-
 		}
 		return false;
 	}
@@ -27,5 +26,4 @@ public class ContainsDuplicateBeck {
 
 		System.out.println(ContainsDuplicateBeck.containsDuplicateBeck(arr));
 	}
-
 }

@@ -13,11 +13,11 @@ public class SortedSquaresBeck {
 		}
 
 		for (int i = 0; i < arr.length; i++) {
-			
+
 			for (int a = i + 1; a < arr.length; a++) {
-				
+
 				if (arr[i] > arr[a]) {
-					
+
 					int temp = arr[i];
 					arr[i] = arr[a];
 					arr[a] = temp;
