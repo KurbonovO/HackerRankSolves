@@ -43,7 +43,7 @@ public class SingleNumberBeck {
 		for (int i : nums) {
 
 			if (!result.add(i)) {
-				
+
 				result.remove(i);
 			}
 		}
@@ -55,7 +55,7 @@ public class SingleNumberBeck {
 		int[] nums = { 4, 1, 2, 1, 2 };
 
 		System.out.println(SingleNumberBeck.singleNumberLeetCode(nums));
-		
+
 		System.out.println(SingleNumberBeck.singleNumberLeetCodeTwo(nums));
 	}
 

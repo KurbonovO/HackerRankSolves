@@ -27,5 +27,4 @@ public class SortColorsBeck {
 
 		System.out.println(Arrays.toString(SortColorsBeck.sortColorsBeck(arr)));
 	}
-
 }

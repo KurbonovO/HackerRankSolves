@@ -24,9 +24,9 @@ public class HappyNumberBeck {
 		}
 		return happyNumberLeetCode(m);
 	}
-	
+
 	public static void main(String[] args) {
-		
+
 		System.out.println(HappyNumberBeck.happyNumberLeetCode(19));
 	}
 }
