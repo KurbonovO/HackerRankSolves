@@ -14,6 +14,13 @@ public class BestTimeToBuyAndSellStockIIBeck {
 
 					i++;
 
+
+
+
+
+
+
+
 				} else if (prices[i] < prices[j]) {
 
 					total = prices[j] - prices[i];
