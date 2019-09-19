@@ -2,23 +2,16 @@ package leetcodeMedium;
 
 public class DecodeWaysBeck {
 
-	public static int decodeWaysBeck(String s) {
+	// Dynamic programming question
 
-		if (s.length() == 1) {
-			return 1;
-		}
+	public int decodeWaysBeck(String s) {
 
+		int n = s.length();
 		int[] dp = new int[s.length() + 1];
-
 		dp[0] = 1;
+		dp[1] = s.charAt(0) != '0' ? 1 : 0;
 
-		if (s.charAt(0) != '0') {
-			dp[1] = 1;
-		} else {
-			dp[1] = 0;
-		}
-
-		for (int i = 2; i <= s.length(); i++) {
+		for (int i = 2; i <= n; i++) {
 
 			int first = Integer.valueOf(s.substring(i - 1, i));
 			int second = Integer.valueOf(s.substring(i - 2, i));
@@ -31,9 +24,14 @@ public class DecodeWaysBeck {
 
 				dp[i] += dp[i - 2];
 			}
-
 		}
-		return dp[s.length()];
+		return dp[n];
 	}
 
+	public static void main(String[] args) {
+
+		DecodeWaysBeck decodeWaysBeck = new DecodeWaysBeck();
+
+		System.out.println(decodeWaysBeck.decodeWaysBeck("226"));
+	}
 }
