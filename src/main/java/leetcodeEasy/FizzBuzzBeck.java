@@ -7,7 +7,7 @@ public class FizzBuzzBeck {
 
 	public static List<String> fizzBuzzBeck(int input) {
 
-		List<String> output = new ArrayList<String>();
+		List<String> output = new ArrayList<>();
 
 		for (int i = 1; i < input; i++) {
 
