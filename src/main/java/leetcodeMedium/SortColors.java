@@ -27,6 +27,7 @@ public class SortColors {
                 end--;
 
             } else {
+
                 i++;
             }
         }
