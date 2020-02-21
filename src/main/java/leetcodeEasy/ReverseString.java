@@ -4,64 +4,42 @@ import java.util.Arrays;
 
 public class ReverseString {
 
-    public char[] reverseString(char[] s) {
+	public void reverseString(char[] input) {
 
-        char[] output = new char[s.length];
+		char[] output = new char[input.length];
+		int a = 0;
 
-        int counter = 0;
+		for (int i = input.length - 1; i >= 0; i--) {
 
-        for(int i = s.length - 1; i >= 0; i--) {
+			output[a] = input[i];
+			a++;
+		}
+		input = output;
+		System.out.println(Arrays.toString(input));
+	}
 
-            output[counter] = s[i];
-            counter += 1;
-        }
-        return output;
-    }
+	public void reverseStringLeetCode(char[] input) {
 
-    public void reverseStringLeetCode(char[] s) {
+		helper(input, 0, input.length - 1);
+	}
 
-        helper(s, 0, s.length - 1);
-    }
+	public void helper(char[] input, int left, int right) {
 
-    public void helper(char[] s, int left, int right) {
+		if (left >= right) {
+			return;
+		}
+		char temp = input[left];
+		input[left++] = input[right];
+		input[right--] = temp;
+		helper(input, left, right);
+	}
+	
+	public static void main(String[] args) {
 
-        //exit out
-        if(left >= right) {
+		char[] input = { 'h', 'e', 'l', 'l', 'o' };
 
-            return;
-        }
-
-        //Get left character to temp
-        char temporaryCharacter = s[left];
-
-        //left character becomes one from last to the right
-        s[left] = s[right];
-
-        //move to next left character
-        left++;
-
-        //last to the right becomes temporary character we held as variable
-        s[right] = temporaryCharacter;
-
-        //move to next right to left character
-        right--;
-
-        //Start the process again
-        helper(s, left, right);
-    }
-
-    public static void main(String[] args) {
-
-        char[] a = {'h','e','l','l','o'};
-
-        ReverseString reverseString = new ReverseString();
-
-        System.out.println(Arrays.toString(reverseString.reverseString(a)));
-
-        char[] b = {'h','e','l','l','o'};
-
-        reverseString.reverseStringLeetCode(b);
-
-        System.out.println(Arrays.toString(b));
-    }
+		ReverseString reverseString = new ReverseString();
+		reverseString.reverseStringLeetCode(input);
+		System.out.println(Arrays.toString(input));
+	}
 }
