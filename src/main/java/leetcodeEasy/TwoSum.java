@@ -23,31 +23,47 @@ public class TwoSum {
 		}
 		return result;
 	}
-	
+
 	public int[] twoPassHashTable(int[] inputArr, int target) {
-		
+
 		Map<Integer, Integer> map = new HashMap<>();
-		
-		for(int i = 0; i < inputArr.length; i++) {
-			
+
+		for (int i = 0; i < inputArr.length; i++) {
+
 			map.put(inputArr[i], i);
 		}
-		for(int i = 0; i < inputArr.length; i++) {
-			
+		for (int i = 0; i < inputArr.length; i++) {
+
 			int complement = target - inputArr[i];
-			
-			 if (map.containsKey(complement) && map.get(complement) != i) {
-				
-				return new int[] {i, map.get(complement)};
+
+			if (map.containsKey(complement) && map.get(complement) != i) {
+
+				return new int[] { i, map.get(complement) };
 			}
 		}
 		throw new IllegalArgumentException();
 	}
-	
+
+	public int[] onePassHashTable(int[] inputArr, int target) {
+
+		Map<Integer, Integer> map = new HashMap<>();
+
+		for (int i = 0; i < inputArr.length; i++) {
+
+			int complement = target - inputArr[i];
+
+			if (map.containsKey(complement)) {
+				return new int[] { map.get(complement), i };
+			}
+			map.put(inputArr[i], i);
+		}
+		throw new IllegalArgumentException();
+	}
+
 	public static void main(String[] args) {
-		
-		int[] inputArr = {1,2,3,4,5,6,7};
+
+		int[] inputArr = { 0, 1, 2, 3, 4, 5, 6, 7 };
 		TwoSum twoSum = new TwoSum();
-		System.out.println(Arrays.toString(twoSum.twoPassHashTable(inputArr, 9)));
+		System.out.println(Arrays.toString(twoSum.onePassHashTable(inputArr, 9)));
 	}
 }
