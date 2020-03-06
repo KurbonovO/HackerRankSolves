@@ -13,13 +13,30 @@ public class HouseRobber {
 		return total;
 	}
 
+	/**
+	 * Time Complexity: O(n)
+	 * Space Complexity: O(1)
+	 */
+	public int houseRobberLeetCode(int[] nums) {
+
+		int previousMax = 0;
+		int currentMax = 0;
+
+		for (int i : nums) {
+
+			int temporary = currentMax;
+			currentMax = Math.max(previousMax + i, currentMax);
+			previousMax = temporary;
+		}
+		return currentMax;
+	}
+
 	public static void main(String[] args) {
 
 		int[] nums = { 2, 7, 9, 3, 1 };
 
 		HouseRobber houseRobber = new HouseRobber();
 		System.out.println(houseRobber.houseRobber(nums));
-
+		System.out.println(houseRobber.houseRobberLeetCode(nums));
 	}
-
 }
