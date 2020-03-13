@@ -4,7 +4,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class NumberOfIslands {
-
+	
+	/**
+	 * Time Complexity: O(M×N) where M is the number of rows and N is the number of columns.
+	 * Space Complexity: O(min(M, N)) because in worst case where the grid is filled with lands,
+	 * the size of queue can grow up to min(M, N).
+	 */
 	public int numberOfIslands(char[][] grid) {
 
 		if (grid == null || grid.length == 0) {
