@@ -1,5 +1,5 @@
 package leetcodeEasy;
 
-public class Easy {
+public class E {
 
 }

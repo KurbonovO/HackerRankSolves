@@ -1,5 +1,5 @@
 package leetcodeMedium;
 
-public class Medium {
+public class M {
 
 }
