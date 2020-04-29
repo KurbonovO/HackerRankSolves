@@ -42,10 +42,4 @@ public class AddTwoNumbers {
 		}
 		return dummyHead.next;
 	}
-	
-	public static void main(String[] args) {
-		
-		
-	}
-
 }
