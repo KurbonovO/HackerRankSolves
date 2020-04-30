@@ -3,43 +3,37 @@ package leetcodeMedium;
 import util.ListNode;
 
 public class AddTwoNumbers {
-	
-	//TODO needs to go over
+
+	// TODO needs to go over
 
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
-		ListNode dummyHead = new ListNode(0);
-		ListNode p = l1;
-		ListNode q = l2;
-		ListNode current = dummyHead;
-		int carry = 0;
-
-		while (p != null || q != null) {
-
-			int x = (p != null) ? p.val : 0;
-			int y = (q != null) ? q.val : 0;
-
-			int sum = carry + x + y;
-			carry = sum / 10;
-
-			current.next = new ListNode(sum % 10);
-			current = current.next;
-
-			if (p != null) {
-				
-				p = p.next;
+		ListNode c1 = l1;
+		ListNode c2 = l2;
+		ListNode sentinel = new ListNode(0);
+		ListNode d = sentinel;
+		
+		int sum = 0;
+		
+		while (c1 != null || c2 != null) {
+			
+			sum /= 10;
+			
+			if (c1 != null) {
+				sum += c1.val;
+				c1 = c1.next;
 			}
-
-			if (q != null) {
-				
-				q = q.next;
+			if (c2 != null) {
+				sum += c2.val;
+				c2 = c2.next;
 			}
+			d.next = new ListNode(sum % 10);
+			d = d.next;
 		}
-
-		if (carry > 0) {
-
-			current.next = new ListNode(carry);
+		if (sum / 10 == 1) {
+			
+			d.next = new ListNode(1);
 		}
-		return dummyHead.next;
+		return sentinel.next;
 	}
 }
