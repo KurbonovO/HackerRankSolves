@@ -8,4 +8,5 @@ public class PlayWithChipsD {
 			++cnt[chip % 2];
 		return Math.min(cnt[0], cnt[1]);
 	}
+
 }
