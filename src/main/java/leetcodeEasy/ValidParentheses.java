@@ -38,6 +38,6 @@ public class ValidParentheses {
 		
 		ValidParentheses validParentheses = new ValidParentheses();
 		
-		System.out.println(validParentheses.validParentheses(input2));
+		System.out.println(validParentheses.validParentheses(input));
 	}
 }
