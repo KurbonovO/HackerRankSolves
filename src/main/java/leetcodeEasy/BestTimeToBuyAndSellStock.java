@@ -28,7 +28,7 @@ public class BestTimeToBuyAndSellStock {
 
 		BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
 
-		System.out.println(bestTimeToBuyAndSellStock.bestTimeToBuyAndSellStock(new int[] { 7, 1, 5, 3, 6, 4 }));
+		System.out.println(bestTimeToBuyAndSellStock.bestTimeToBuyAndSellStock(new int[] { 0, 6, -3, 7 }));
 	}
 
 }
