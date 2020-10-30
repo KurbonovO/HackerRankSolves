@@ -2,6 +2,10 @@ package leetcodeEasy;
 
 import util.ListNode;
 
+/**
+Time Complexity: O(n + m)
+Space Complexity: O(n +m)
+*/
 public class MergeTwoSortedLists {
 
 	public ListNode mergeTwoSortedLists(ListNode l1, ListNode l2) {
