@@ -12,11 +12,11 @@ public class TwoSum {
 
 		for (int i = 0; i < nums.length; i++) {
 
-			int compliment = target - nums[i];
+			int difference = target - nums[i];
 
-			if (map.containsKey(compliment)) {
+			if (map.containsKey(difference)) {
 
-				return new int[] { map.get(compliment), i };
+				return new int[] { map.get(difference), i };
 			}
 
 			map.put(nums[i], i);
@@ -25,9 +25,10 @@ public class TwoSum {
 	}
 
 	/**
-	 * TODO!!!!!! 
-	 * Time Complexity: O(n) 
-	 * Space Complexity: O(n)
+	 * Time Complexity: O(n). We traverse the list containing n elements only once. 
+	 * Each look up in the table costs only O(1) time.
+	 * Space Complexity: O(n). The extra space required depends on the number of items
+	 * stored in the hash table, which stores at most n elements.
 	 */
 	public static void main(String[] args) {
 
