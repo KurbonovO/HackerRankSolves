@@ -12,11 +12,10 @@ public class PizzaWith3nSlicesD {
 	}
 
 	int maxSum(int[] arr, int n) { // max sum when pick `n` non-adjacent elements from `arr`
+		
 		int m = arr.length;
 		int[][] dp = new int[m + 1][n + 1]; // dp[i][j] is maximum sum which we pick `j` elements from linear array `i`
-											// elements
-		// Case j = 0 (pick 0 elements): dp[i][0] = 0
-		// Case i = 0 (array is empty): dp[0][j] = 0
+		
 		for (int i = 1; i <= m; ++i) {
 			for (int j = 1; j <= n; ++j) {
 				if (i == 1) { // array has only 1 element
@@ -25,7 +24,6 @@ public class PizzaWith3nSlicesD {
 					dp[i][j] = Math.max(dp[i - 1][j], // don't pick element `ith`
 							dp[i - 2][j - 1] + arr[i - 1] // pick element `ith` -> dp[i-2][j-1] means choose `j-1`
 															// elements from array `i-2` elements
-															// because we exclude adjacent element `(i-1)th`
 					);
 				}
 			}
